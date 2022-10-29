@@ -1,28 +1,42 @@
 * {
   font-family: 'Roboto', sans-serif;
-  outline: 2px solid pink
+  outline: 2px solid brown
 }
+
+body {
+  background-image: url("/Users/cieragrace/turing_work/Mod1/whats-for-dinner/assets/burger-friends.jpg");
+  background-size: 100%;
+  width: 1145px;
+  height: 583px;
+  margin: 0;
+}
+
 header {
-  height: 30px;
-  margin-left: 20px;
+  height: 50px;
+  background-color: #0fb9b1;
+   margin-top: 0px;
+
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-start;
 }
 
 h1 {
-  background-color: #0fb9b1;
-  height: 30px;
-  align-items: center;
-  align-content: center;
-}
-
-.header-title {
-padding: 5px 20px 5px 20px;
-color: black;
-font-size: 17px;
+  color: black;
+  font-size: 18px;
+  margin-left: 15px;
 }
 
 .add-recipe-button {
   height: 30px;
   width: 105px;
+  margin-right: 15px;
   background-color: white;
   color: black;
   outline: .5px solid black;
@@ -30,63 +44,84 @@ font-size: 17px;
   font-size: 12px;
   border-radius: 4px;
 }
+/*  End of Header  */
 
-img {
-  width: 100%;
-  height: 100%;
-  /* z-index: 0 */
-  position: relative;
+main {
+  /* width: 855px;
+  height: 525px; */
+  /* background-image: url("/Users/cieragrace/turing_work/Mod1/whats-for-dinner/assets/burger-friends.jpg");
+  background-size: 100%; */
+  display: flex;
+  	flex-direction: row;
+  	flex-wrap: nowrap;
+  	justify-content: space-around;
+  	align-items: center;
 }
+
 
 .container {
-  width: 400px;
-  height: 400px;
+  height: 335px;
+  width: 430px;
   background-color: rgba(225, 225, 225, .9);
-  outline: 1px solid gray
-  /* z-index: 1 */
+  outline: 1px solid gray;
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+form {
+  height: 275px;
+  width: 315px;
 }
 
-.box1 {
-  float: left;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+#Box1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-start;
+
 }
 
-.box-one-title {
-  font-size: 25px;
-  padding: 50px 50px 20px 30px;
-  align-items: flex-end;
+p {
+  font-size: 20px;
+  margin-left: 15px;
 }
 
 input {
-  padding: 10px 50px 10px 30px;
+  margin-top: 10px;
   margin-left: 32px;
+  margin-bottom: 10px;
   }
 
 label {
-  /* margin-right: 20px; */
+  margin-right: 20px;
   line-height: 38px;
-  font-size: 18px;
+  font-size: 17px;
+  margin-top: 10px;
 }
 
 .lets-cook-button {
-margin-top: 17px;
-  margin-left: 28px;
-  line-height: 40px;
   height: 35px;
-  width: 155px;
+  width: 170px;
   background-color: #0fb9b1;
   outline 1px solid #0fb9b1
   color: black;
-  font-size: 12px;
+  font-size: 13px;
   border-radius: 4px;
+  margin-top: 17px;
+  margin-left: 28px;
+  margin-bottom: 35px:
 }
 
-.box2 {
-  float:right;
-  position:absolute;
+
+#box2 {
+  /* float:right;
+  position:absolute; */
 }
+svg {
+  padding: 100px 115px 100px 115px;
+}
+
 /* font-family: 'Roboto', sans-serif;
 
 COLORS
