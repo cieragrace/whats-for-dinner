@@ -1,40 +1,49 @@
 * {
+  font-family: 'Roboto', sans-serif;
   outline: 2px solid pink
 }
 header {
-  height: 32px;
-
-
+  height: 30px;
+  margin-left: 20px;
 }
+
 h1 {
   background-color: #0fb9b1;
-  color: black;
-  font-size: 25px;
-  height: 32px;
-  padding: 20px 15px 20px 10px;
+  height: 30px;
+  align-items: center;
+  align-content: center;
+}
+
+.header-title {
+padding: 5px 20px 5px 20px;
+color: black;
+font-size: 17px;
 }
 
 .add-recipe-button {
-  height: 38px;
-  width: 95px;
+  height: 30px;
+  width: 105px;
   background-color: white;
   color: black;
   outline: .5px solid black;
   padding 10px;
-  font-size: 10px;
+  font-size: 12px;
+  border-radius: 4px;
 }
 
 img {
   width: 100%;
   height: 100%;
+  /* z-index: 0 */
   position: relative;
 }
 
 .container {
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   background-color: rgba(225, 225, 225, .9);
   outline: 1px solid gray
+  /* z-index: 1 */
 }
 
 .box1 {
@@ -42,15 +51,41 @@ img {
   position: absolute;
   left: 0px;
   top: 0px;
+}
 
-}
 .box-one-title {
-  font-size: 20px;
+  font-size: 25px;
+  padding: 50px 50px 20px 30px;
+  align-items: flex-end;
 }
+
+input {
+  padding: 10px 50px 10px 30px;
+  margin-left: 32px;
+  }
+
+label {
+  /* margin-right: 20px; */
+  line-height: 38px;
+  font-size: 18px;
+}
+
+.lets-cook-button {
+margin-top: 17px;
+  margin-left: 28px;
+  line-height: 40px;
+  height: 35px;
+  width: 155px;
+  background-color: #0fb9b1;
+  outline 1px solid #0fb9b1
+  color: black;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
 .box2 {
   float:right;
   position:absolute;
-
 }
 /* font-family: 'Roboto', sans-serif;
 

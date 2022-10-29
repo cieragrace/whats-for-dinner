@@ -6,7 +6,7 @@
   </head>
   <body>
     <!-- <header> -->
-      <h1>What's for Dinner?<button class="add-recipe-button" style="float: right;" type="button">ADD A RECIPE</button></h1>
+      <h1 class="header-title">What's for Dinner?<button class="add-recipe-button" style="float: right;" type="button">ADD A RECIPE</button></h1>
     <!-- </header> -->
     <main>
     <!-- <main img src="burger-friends.jpg" alt="friends-and-Burgers"> -->
@@ -14,8 +14,15 @@
       <form>
         <div class="container" id="Box1">
           <p class="box-one-title"> What are you looking for?</p>
-          <input type="radio" id="side-dish" name='what-to-eat?' value="Side">
-          <label for="Side">Side</label><br>
+          <input type="radio" id="side-dish" name="what-to-eat?" value="side">
+          <label for="side">Side</label><br>
+          <input type="radio" id="main-dish" name="what-to-eat" value="main">
+          <label for="main">Main Dish</label><br>
+          <input type="radio" id="dessert-dish" name="what-to eat" value="dessert">
+          <label for"dessert">Dessert</label><br>
+          <input type="radio" id="entire-meal" name="what-to-eat" value="entire">
+          <label for="entire">Entire Meal</label><br>
+          <button class="lets-cook-button" type="button">LET'S COOK!</button>
         <!-- list of meal types (bubbles)-->
         <!-- button -->
         </div>
