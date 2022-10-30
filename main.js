@@ -8,6 +8,7 @@ var dessertInput = document.querySelector("#dessert-dish")
 var entireMealInput = document.querySelector("#entire-meal")
 var youShouldMake = document.querySelector(".you-should-make")
 var innerHTML = document.querySelector(".innerhtml")
+var clearButton = document.querySelector(".clear-button")
 // addRecipeButton.addEventListener('click', function)
 letsCookButton.addEventListener('click', suggestionGenerator)
 // crockpot.addEventListener('click', )
@@ -47,15 +48,19 @@ function suggestionGenerator() {
 
   if (sideInput.checked === true) {
     crockpot.classList.add("hidden");
-    secondBox.innerText = sides[sidesIndex]
+    youShouldMake.classList.remove("hidden")
+    secondBox.innerText = `${sides[sidesIndex]}!`
   } else if (mainInput.checked === true) {
     crockpot.classList.add("hidden");
-    secondBox.innerText = mains[mainsIndex]
+    youShouldMake.classList.remove("hidden")
+    secondBox.innerText = `${mains[mainsIndex]}!`
   } else if (dessertInput.checked === true) {
     crockpot.classList.add("hidden");
-    secondBox.innerText = desserts[dessertsIndex]
+    youShouldMake.classList.remove("hidden")
+    secondBox.innerText = `${desserts[dessertsIndex]}!`
   } else if (entireMealInput.checked === true) {
     crockpot.classList.add("hidden");
+    youShouldMake.classList.remove("hidden")
     secondBox.innerText = entire[fullMealIndex]
   }
 }

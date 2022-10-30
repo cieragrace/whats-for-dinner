@@ -87,12 +87,13 @@ form {
 
 }
 
-p {
-  font-size: 29px;
-  margin-top: 70px;
+.what-are {
+  font-size: 30px;
+  margin-top: 90px;
   margin-left: 42px;
 }
-p::after {
+
+.what-are::after {
   content: "*";
   color: red;
 }
@@ -104,10 +105,10 @@ input {
   }
 
 label {
-  line-height: 45px;
-  font-size: 20px;
+  line-height: 48px;
+  font-size: 22px;
   margin-bottom: 8px;
-  margin-top: 8px;
+  margin-top: 0px;
 }
 
 .lets-cook-button {
@@ -124,10 +125,16 @@ label {
 }
 
 svg {
-  padding: 130px 190px 185px 195px;
+  padding: 175px 185px 185px 195px;
 }
 #box2 {
   font-size: 40px;
+}
+.you-should-make {
+
+}
+.clear-button {
+
 }
 
 /* font-family: 'Roboto', sans-serif;
