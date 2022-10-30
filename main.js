@@ -9,9 +9,11 @@ var entireMealInput = document.querySelector("#entire-meal")
 var youShouldMake = document.querySelector(".you-should-make")
 var innerHTML = document.querySelector(".innerhtml")
 var clearButton = document.querySelector(".clear-button")
-// addRecipeButton.addEventListener('click', function)
-letsCookButton.addEventListener('click', suggestionGenerator)
-// crockpot.addEventListener('click', )
+letsCookButton.addEventListener('click', mainDish)
+letsCookButton.addEventListener('click', sideDish)
+letsCookButton.addEventListener('click', dessertDish)
+letsCookButton.addEventListener('click', entireMeal)
+
 var sides = ['Miso Glazed Carrots',
 'Coleslaw', 'Garden Salad', 'Crispy Potatoes',
 'Sweet Potato Tots', 'Coconut Rice', 'Caeser Salad', 'Shrimp Summer Rolls', 'Garlic Butter Rolls',
@@ -38,34 +40,41 @@ var desserts  = ['Apple Pie',
 'Tart Tatin',
 'Croissants',
 'Eclairs'];
+var sidesIndex = getRandomIndex(sides);
+var mainsIndex = getRandomIndex(mains);
+var dessertsIndex = getRandomIndex(desserts)
+var fullMealIndex = `${sidesIndex}+${mainsIndex}+${dessertsIndex}`
 
-function suggestionGenerator() {
-  console.log(sideInput.checked)
-  var sidesIndex = getRandomIndex(sides);
-  var mainsIndex = getRandomIndex(mains);
-  var dessertsIndex = getRandomIndex(desserts)
-  var fullMealIndex = `${sidesIndex}+${mainsIndex}+${dessertsIndex}`
-
+function sideDish() {
   if (sideInput.checked === true) {
     crockpot.classList.add("hidden");
     youShouldMake.classList.remove("hidden")
     secondBox.innerText = `${sides[sidesIndex]}!`
-  } else if (mainInput.checked === true) {
+  }
+}
+function mainDish() {
+  if (mainInput.checked === true) {
     crockpot.classList.add("hidden");
     youShouldMake.classList.remove("hidden")
     secondBox.innerText = `${mains[mainsIndex]}!`
-  } else if (dessertInput.checked === true) {
-    crockpot.classList.add("hidden");
-    youShouldMake.classList.remove("hidden")
-    secondBox.innerText = `${desserts[dessertsIndex]}!`
-  } else if (entireMealInput.checked === true) {
-    crockpot.classList.add("hidden");
-    youShouldMake.classList.remove("hidden")
-    secondBox.innerText = `${sidesIndex}+${mainsIndex}+${dessertsIndex}`
   }
 }
 
+function dessertDish() {
+  if (dessertInput.checked === true) {
+    crockpot.classList.add("hidden");
+    youShouldMake.classList.remove("hidden")
+    secondBox.innerText = `${desserts[dessertsIndex]}!`
+  }
+}
 
+function entireMeal() {
+  if (entireMealInput.checked === true) {
+    crockpot.classList.add("hidden");
+    youShouldMake.classList.remove("hidden")
+    // secondBox.innerText =
+  }
+}
 
   function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
