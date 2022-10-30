@@ -13,7 +13,7 @@ I have created a random meal generator button. We all have wasted time trying to
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
-
+-I think this is updated in the file, but I could only see it in its own tab*
 
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)

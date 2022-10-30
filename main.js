@@ -61,7 +61,7 @@ function suggestionGenerator() {
   } else if (entireMealInput.checked === true) {
     crockpot.classList.add("hidden");
     youShouldMake.classList.remove("hidden")
-    secondBox.innerText = entire[fullMealIndex]
+    secondBox.innerText = `${sidesIndex}+${mainsIndex}+${dessertsIndex}`
   }
 }
 
