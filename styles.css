@@ -17,7 +17,9 @@ header {
   margin-top: 0px;
 
 }
-
+.hidden {
+  background-color: pink;
+}
 .header-container {
   display: flex;
   flex-direction: row;

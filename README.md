@@ -1,51 +1,34 @@
+
 # What's for Dinner?
-
-## Overview
-
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
-
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
-
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html). 
-
-## Learning Goals
-
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
-
-## Setup
-
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
-
-______________________________________________________  
-# README Template  
-Before turning this project in, erase this line and everything above it and fill in the info below.  
-______________________________________________________  
-
-# What's for Dinner? 
 
 ### Abstract:
 [//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
-
+I have created a random meal generator button. We all have wasted time trying to decide on what to eat. Whether you are alone or with some friends, it can be exausting to decide. What's for dinner is taking away this frustration. The user can select the type of meal they would like and we will randomly display a suggestion. There is also a full meal option, where the generator randomly picks a side, main and dessert.
 ### Installation Instructions:
 [//]: <> (What steps does a person have to take to get your app cloned down and running?)
+1.) fork this repo.
+2.) copy SSH key and clone to local machine.
+3.) cd into the repo.
+4.) Use `atom .` to open in code generator or `open indexhtml` to view in browser
 
 ### Preview of App:
 [//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
 
+
 ### Context:
 [//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+I am on my 3rd week at Turing. I spend two days working on this project. I chose to be sure I was prepared for mid mods and gave myself less time to push this assignment. I missed the CSS flexbox lesson, but feel like I was able to get a grip on it over the last few days.
 
 ### Contributors:
 [//]: <> (Who worked on this application? Link to their GitHubs.)
+https://github.com/cieragrace
+I had some help talking through some CSS from my rock as well
 
 ### Learning Goals:
 [//]: <> (What were the learning goals of this project? What tech did you work with?)
+We were learning CSS/Flexbox. How to use CSS, HTML, and javascript together. I used atom mostly and googled a lot.
 
 ### Wins + Challenges:
 [//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+I struggled with getting my background image set at first. I tried to sill 100%, but the photo didn't seem to line up. I also went back and forth with how to hide the svg file.
+After missing the lesson that was most likely most important to this assignment I am very happy with my CSS layout. I had some sizing issues, where my screen wasn't staying in scale when I was using dev tools so I had to re-work a lot of it, leaving me a bit less time for java and an extra iteration on the project.

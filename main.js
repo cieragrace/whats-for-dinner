@@ -1,12 +1,14 @@
 var addRecipeButton = document.querySelector(".add-recipe-button")
 var letsCookButton = document.querySelector(".lets-cook-button")
 var secondBox = document.querySelector("#Box2")
-var crockpot = document.querySelector("svg")
-
+var crockpot = document.querySelector(".crockpot")
+var sideInput = document.querySelector("#side-dish")
+var mainInput = document.querySelector("#main-dish")
+var dessertInput = document.querySelector("#dessert-dish")
+var entireMealInput = document.querySelector("#entire-meal")
 // addRecipeButton.addEventListener('click', function)
 letsCookButton.addEventListener('click', suggestionGenerator)
 // crockpot.addEventListener('click', )
-
 var sides = ['Miso Glazed Carrots',
 'Coleslaw', 'Garden Salad', 'Crispy Potatoes',
 'Sweet Potato Tots', 'Coconut Rice', 'Caeser Salad', 'Shrimp Summer Rolls', 'Garlic Butter Rolls',
@@ -16,7 +18,7 @@ var mains = ['Spaghetti and Meatballs',
 'Bibimbap', 'Chicken Parmesean', 'Butternut Squash Soup', 'BBQ Chicken Burgers',
 'Ramen', 'Empanadas', 'Chicken Fried Rice', 'Sheet Pan Fajitas', 'Margarita Pizza'];
 var desserts  = ['Apple Pie',
-'Lemon Meringue Pie'
+'Lemon Meringue Pie',
 'Black Forest Cake',
 'Banana Bread',
 'Peach Cobbler',
@@ -35,21 +37,22 @@ var desserts  = ['Apple Pie',
 'Eclairs'];
 
 function suggestionGenerator() {
+  console.log(sideInput.checked)
   var sidesIndex = getRandomIndex(sides);
   var mainsIndex = getRandomIndex(mains);
   var dessertsIndex = getRandomIndex(desserts)
   var fullMeal = `${sidesIndex}+${mainsIndex}+${dessertsIndex}`
 
-  if (input.value === "side") {
+  if (sideInput.checked === true) {
     crockpot.classList.add("hidden");
-    secondBox.innerText = sidesIndex
-  } else if (input.value === "main") {
+    secondBox.innerText = sides[sidesIndex]
+  } else if (mainInput === true) {
     crockpot.classList.add("hidden");
     secondBox.innerText = mainsIndex
-  } else if (input.value === "dessert") {
+  } else if (dessertInput === true) {
     crockpot.classList.add("hidden");
     secondBox.innerText = dessertsIndex
-  } else if (input.value === "entire") {
+  } else if (entireMealInput === true) {
     crockpot.classList.add("hidden");
     secondBox.innerText = fullMeal
   }
@@ -58,17 +61,6 @@ function suggestionGenerator() {
   return Math.floor(Math.random() * array.length);
   }
 
-  currentPoster = new Poster(newPoster.image, newPoster.title, newPoster.quote)
-  posterImage.src = currentPoster.imageURL
-
-var sidesIndex = getRandomIndex(sides);
-var mainsIndex = getRandomIndex(mains);
-var dessertsIndex = getRandomIndex(desserts)
-var fullMeal = sidesIndex + mainsIndex + dessertsIndex
-console.log(fullMeal)
-}
-
-scgAccess.classList.add('hidden')
 
 //user selects meal type and let's cook letsCookButton
 //meal is pulled from array and displayed in box 2(hide svg)
