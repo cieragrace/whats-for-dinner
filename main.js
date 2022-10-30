@@ -72,7 +72,7 @@ function entireMeal() {
   if (entireMealInput.checked === true) {
     crockpot.classList.add("hidden");
     youShouldMake.classList.remove("hidden")
-    // secondBox.innerText =
+    secondBox.innerText = fullMealIndex
   }
 }
 

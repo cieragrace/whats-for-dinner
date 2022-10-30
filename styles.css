@@ -1,13 +1,11 @@
 * {
   font-family: 'Roboto', sans-serif;
-  /* outline: 2px solid brown */
+  /* outline: 2px solid brown; */
 }
 
 body {
   background-image: url("/Users/cieragrace/turing_work/Mod1/whats-for-dinner/assets/burger-friends.jpg");
   background-size: 100%;
-  /* width: 1148px;
-  height: 630px; */
   margin: 0;
 }
 
@@ -15,11 +13,8 @@ header {
   height: 65px;
   background-color: #0fb9b1;
   margin-top: 0px;
+}
 
-}
-.hidden {
-  background-color: pink;
-}
 .header-container {
   display: flex;
   flex-direction: row;
@@ -79,17 +74,17 @@ form {
 
 #Box1 {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: flex-start;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
 
 }
 
 .what-are {
   font-size: 30px;
-  margin-top: 90px;
+  margin-top: 63px;
   margin-left: 42px;
 }
 
@@ -107,32 +102,34 @@ input {
 label {
   line-height: 48px;
   font-size: 22px;
-  margin-bottom: 8px;
-  margin-top: 0px;
+  margin-bottom: 12px;
 }
 
 .lets-cook-button {
-  height: 30px;
-  width: 205px;
+  height: 40px;
+  width: 210px;
   background-color: #0fb9b1;
   border: none;
   color: black;
   font-size: 16px;
   border-radius: 4px;
   margin-top: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 55px;
   margin-left: 40px;
 }
 
 svg {
   padding: 175px 185px 185px 195px;
 }
+
 #box2 {
   font-size: 40px;
 }
+
 .you-should-make {
 
 }
+
 .clear-button {
 
 }
