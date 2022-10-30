@@ -49,8 +49,6 @@ h1 {
 /*  End of Header  */
 
 main {
-  /* width: 855px;
-  height: 525px; */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -65,14 +63,18 @@ main {
   width: 510px;
   background-color: rgba(225, 225, 225, .9);
   outline: 1px solid gray;
-  /* margin-bottom: 100px;
-  margin-top: 50px; */
-  /* margin-bottom: 100px;
-  margin-top: 50px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
 }
+
 form {
   height: 410px;
   width: 510px;
+  margin-bottom: 50px;
 }
 
 #Box1 {
@@ -89,6 +91,10 @@ p {
   font-size: 29px;
   margin-top: 70px;
   margin-left: 42px;
+}
+p::after {
+  content: "*";
+  color: red;
 }
 
 input {
@@ -117,13 +123,11 @@ label {
   margin-left: 40px;
 }
 
-
-#box2 {
-  /* float:right;
-  position:absolute; */
-}
 svg {
   padding: 130px 190px 185px 195px;
+}
+#box2 {
+  font-size: 40px;
 }
 
 /* font-family: 'Roboto', sans-serif;
